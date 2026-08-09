@@ -12,20 +12,28 @@
     --main-color: #00fff2;
 }
 html {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     scroll-behavior: smooth;
 }
 body {
+    min-height: 100vh;
     background-color: var(--bgcolor);
     color: var(--textcolor);
 }
 main{
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right:
 }
 
+.nav{
+    background-color: var(--main-color);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
 .navbar ul{ 
+    width: 100%;
     list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -34,7 +42,7 @@ main{
     color: var(--textcolor);
     text-decoration: none;
     padding: 15px;
-    display: block;
+    display: flex;
     text-align: center;
 }
 .navbar a:hover{
