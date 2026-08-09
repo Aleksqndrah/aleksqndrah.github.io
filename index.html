@@ -13,7 +13,7 @@
     <nav class="navbar">
         <ul>
             <li><a href="#home">home</a></li>
-            <li onclick=showAbout()><a href="#about">about</a></li>
+            <li onclick=showAbout() onclick=hideAbout()><a href="#about">about</a></li>
             <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
@@ -44,11 +44,14 @@
     </g>
 </svg>
 
-
 <script>
     function showAbout() {
-         const about = document.querySelector('.about');
-         about.style.display = 'flex';
+        const about = document.querySelector('.about');
+        about.style.display = 'flex';
+    }
+    function hideAbout() {
+        const about = document.querySelector('.about');
+        about.style.display = 'none';
     }
 </script>
 
