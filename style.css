@@ -8,7 +8,7 @@
 
 :root {
     --bgcolor: #ffffff;
-    --textcolor: #3a3a3a;
+    --textcolor: #3f3f3f;
     --main-color: #00fff2;
 }
 html {
@@ -25,8 +25,11 @@ main{
     margin-right: 20px;
 }
 nav{
-    background-color: var(--bgcolor);
-    box-shadow: 0px 5px 15px rgba(82, 82, 82, 0.1);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -52,5 +55,6 @@ nav{
 }
 
 .navbar li{
-    float: left;
+    height: 50px;
+
 }
